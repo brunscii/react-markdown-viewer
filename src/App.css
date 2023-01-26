@@ -1,10 +1,22 @@
 * {
-  background-color: #333;
+  background-color: #222;
+}
+
+a {
+  color: #259
+}
+
+body{ 
   color: #ddd;
-  margin: 0;
+  margin: .5em;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 #btn-swap {
+  color: #ddd;
+  border-color: #ddd;
+  border-bottom: none;
   margin-top: 2em;
   max-width: 10em;
 }
@@ -13,10 +25,25 @@
   display: flex;
   flex-direction: column;
 }
+/* 
+#md-editor {
+  height: 84vh;
+} */
 
-pre, code , blockquote * {
+#prev-box, #md-editor {
+  height: 84vh;
+  border: 1px inset #ddd;
+  overflow-y: scroll;
+  padding: .5em;
+}
+
+pre {
   margin: .5em;
-  padding-left: 1em;
+  padding-inline: .5em;
+  width: max-content;
+}
+
+code, pre {
   background-color: #111;
 }
 
