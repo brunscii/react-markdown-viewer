@@ -1,5 +1,6 @@
 * {
   background-color: #222;
+  color: #ddd;
 }
 
 a {
@@ -7,14 +8,12 @@ a {
 }
 
 body{ 
-  color: #ddd;
   margin: .5em;
   height: 100vh;
   overflow-y: hidden;
 }
 
 #btn-swap {
-  color: #ddd;
   border-color: #ddd;
   border-bottom: none;
   margin-top: 2em;
@@ -35,6 +34,10 @@ body{
   border: 1px inset #ddd;
   overflow-y: scroll;
   padding: .5em;
+}
+
+#prev-box::-webkit-scrollbar, #md-editor::-webkit-scrollbar{
+  display: none;
 }
 
 pre {
