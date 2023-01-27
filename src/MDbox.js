@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import React, {useState} from "react";
 import DOMPurify from 'dompurify';
 import marked from 'marked';
@@ -20,7 +20,7 @@ function MDPreviewer() {
       console.log('btn pressed with prev as tite' + mdText)
       
       convertMDtoHTML(mdText).then( (content)=> {
-        prevBox.innerHTML = content;
+        document.querySelector('#prev-container').innerHTML = content;
       });
 
       document.querySelector('#md-editor').classList.add('inactive');
@@ -66,7 +66,9 @@ function MDPreviewer() {
                 onInput={ (e)=> setmdText( e.target.value ) }>
                   {mdText}
                 </textarea>
-      <div className="inactive" id="prev-box">" "</div>
+      <div className="inactive" id="prev-box">
+        <div id="prev-container"></div>
+      </div>
 
     </div>
   );
