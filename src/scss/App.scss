@@ -42,7 +42,7 @@ body, #btn-swap{
  
 #prev-box, #md-editor {
   background-color: #333;
-  max-height: 70vh;
+  height: 70vh;
   border: 1px inset #ddd;
   overflow-y: scroll;
   // padding-block: .5em;
@@ -62,7 +62,6 @@ body, #btn-swap{
   
   #prev-container {
     width: 90%;
-    
     table {
       border-spacing: 0;      
       th {
@@ -99,6 +98,7 @@ body, #btn-swap{
   }
   
   code, pre {
+    box-sizing: border-box;
     background-color: #111;
     width: 100%;
   }

@@ -41,7 +41,7 @@ body, #btn-swap {
 
 #prev-box, #md-editor {
   background-color: #333;
-  max-height: 70vh;
+  height: 70vh;
   border: 1px inset #ddd;
   overflow-y: scroll;
   padding-inline: 1em;
@@ -84,6 +84,7 @@ body, #btn-swap {
   width: max-content;
 }
 #prev-box code, #prev-box pre {
+  box-sizing: border-box;
   background-color: #111;
   width: 100%;
 }
