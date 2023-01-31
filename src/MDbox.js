@@ -63,8 +63,9 @@ function MDPreviewer() {
                 id="md-editor" cols="80" 
                 rows="30" 
                 placeholder=""
-                onInput={ (e)=> setmdText( e.target.value ) }>
-                  {mdText}
+                onInput={ (e)=> setmdText( e.target.value ) }
+                value={mdText}>
+                  
                 </textarea>
       <div className="inactive" id="prev-box">
         <div id="prev-container"></div>
